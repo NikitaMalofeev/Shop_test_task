@@ -1,0 +1,279 @@
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("fonts/gothampro_black.ttf");
+}
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("fonts/gothampro_medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("fonts/gothampro_bold.ttf");
+  font-weight: 700;
+}
+
+#flag {
+  max-width: 24px;
+  height: 12px;
+}
+
+.wrapper {
+  max-width: 390px;
+  margin: 0 auto;
+}
+.header {
+  background: #f19d2f;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: row;
+  color: #2c2b31;
+  font-size: 12.5px;
+  line-height: 12px;
+  text-align: center;
+  padding: 11px 15px;
+  margin: 0;
+}
+
+.header__title {
+  flex: 1 1 auto;
+}
+
+.main {
+}
+.main__offer {
+}
+
+.offer {
+}
+.offer__brand {
+  max-width: 218px;
+  padding: 18px 86px;
+  background: #ffd1ac;
+  position: relative;
+}
+
+.brand__image {
+  margin-bottom: 10px;
+}
+
+.offer__brand ::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: #f19d2f;
+  border-radius: 50%;
+  top: 26px;
+  left: 235px;
+}
+
+.brand__description {
+  font-size: 13.47px;
+  line-height: 12.89px;
+  letter-spacing: 0.15px;
+  text-align: center;
+  color: #2c2b31;
+  font-weight: 600;
+}
+
+.offer__banner {
+  position: relative;
+}
+
+.offer__image {
+  max-height: 280px;
+}
+
+.offer__timer {
+  display: flex;
+  flex-direction: column;
+  max-width: 103px;
+  width: 100%;
+  height: 58px;
+  border-radius: 7.1px;
+  gap: 4px;
+  background: #f19d2f;
+  position: absolute;
+  bottom: 14px;
+  left: 13px;
+}
+
+.timer__title {
+  font-size: 10.5px;
+  line-height: 10px;
+  font-weight: 700;
+  margin-top: 9px;
+  color: white;
+  text-align: center;
+}
+
+.timer {
+  color: white;
+  margin-top: 8px;
+  text-align: center;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.offer__price {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 116px;
+  width: 100%;
+  height: 58px;
+  background: #37d997;
+  color: white;
+  border-radius: 6px;
+  text-align: center;
+  position: absolute;
+  bottom: 14px;
+  right: 12px;
+}
+
+.offer__price-old {
+  font-size: 18px;
+  line-height: 17px;
+  font-weight: 700;
+  text-decoration: line-through;
+  text-decoration-color: #e27500;
+  text-decoration-thickness: 3px;
+}
+
+.offer__price-old ::before {
+  content: "";
+}
+
+.offer__price-new {
+  font-size: 22.5px;
+  line-height: 21.5px;
+  font-weight: 700;
+}
+
+.shop {
+  background: #f0f0f0;
+  padding: 11px 15px 0;
+}
+.shop__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.shop__name {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+  margin-bottom: 20px;
+}
+
+.shop__card {
+  max-width: 358px;
+}
+
+.card {
+}
+.card__image {
+}
+
+.card__display {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.card__showcase {
+  display: flex;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+.card__showcase img {
+  min-width: 100%;
+}
+
+.card__select {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.card__item:hover {
+  opacity: 0.4;
+}
+
+.card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.fa {
+  color: #f8b656;
+}
+
+.info__delivery {
+  display: flex;
+  flex-direction: row;
+}
+
+.info__stock {
+  display: flex;
+  flex-direction: row;
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.options__box {
+  max-width: 170px;
+  width: 100%;
+}
+
+.options__title {
+  text-align: center;
+  font-size: 10px;
+  line-height: 10px;
+  margin-bottom: 4px;
+}
+
+.options-color,
+.options-size {
+  width: inherit;
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
+  padding: 15px 30px;
+  border-radius: 15px;
+  text-align: center;
+  background: url(../assets/arrow.png) no-repeat right white;
+  background-position: bottom 17px right 10px;
+}
+
+.card__buy {
+  max-width: 356px;
+  width: 100%;
+  height: 50px;
+  margin: 0 auto 40px;
+  padding: 10px 20px;
+  border-radius: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  background: #37d997;
+  color: white;
+  font-size: 30px;
+  line-height: 29px;
+  letter-spacing: 0em;
+}

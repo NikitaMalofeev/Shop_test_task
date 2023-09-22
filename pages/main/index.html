@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../styles/style.css" />
+    <link rel="stylesheet" href="../../styles/normalize.css" />
+    <!-- добавил одну библиотеку для иконок звезд чтобы не делать лишние img -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+            <img id="flag" src="../../assets/zaFlag.svg" alt="ZA flag">
+            <p class="header__title">SPECIAL OFFER + FREE DELIVERY 2-4 DAYS IN SA</p>
+            <img id="flag" src="../../assets/zaFlag.svg" alt="ZA flag">
+        </div>
+      </header>
+      <main class="main">
+        <section class="main__offer offer">
+          <div class="offer__brand brand">
+            <img class="brand__image" src="../../assets/brandName.svg" alt="" />
+            <p class="brand__description">orthopedic slippers</p>
+          </div>
+          <div class="offer__banner">
+            <img class="offer__image" src="../../assets/banner.png" alt="" />
+            <div class="offer__timer">
+              <p class="timer__title">LIMITED OFFER</p>
+              <label class="timer" id="timer" for="">
+                <div id="timer__hours"></div>
+                :
+                <div id="timer__minutes"></div>
+                :
+                <div id="timer__seconds"></div>
+              </label>
+            </div>
+            <label class="offer__price" for="">
+              <p class="offer__price-old">R 250.00</p>
+              <p class="offer__price-new">R 160.00</p>
+            </label>
+          </div>
+        </section>
+        <section class="shop">
+          <div class="shop__header">
+            <p class="shop__excellent">Excellent 4.8/5</p>
+            <div class="shop__brand">
+              <img
+                class="shop__brand-img"
+                src="../../assets/shopBrand.svg"
+                alt=""
+              />
+            </div>
+            <p class="shop__sale">best selling</p>
+          </div>
+          <h2 class="shop__name">Orthopedic Slippers</h2>
+          <div class="shop__card card">
+            <div class="card__image">
+              <div class="card__display">
+                <div class="card__showcase">
+                  <img src="../../assets/black.png" alt="black-shoe" />
+                  <img src="../../assets/orange.png" alt="orange-shoe" />
+                  <img src="../../assets/pink.png" alt="pink-shoe" />
+                  <img src="../../assets/yellow.png" alt="yellow-shoe" />
+                </div>
+              </div>
+              <div class="card__select">
+                <div class="card__item">
+                  <a href="#" data-id="1" class=".card__link">
+                    <img src="../../assets/black.png" alt="black-shoe" />
+                  </a>
+                </div>
+                <div class="card__item">
+                  <a href="#" data-id="2" class=".card__link">
+                    <img src="../../assets/orange.png" alt="orange-shoe" />
+                  </a>
+                </div>
+                <div class="card__item">
+                  <a href="#" data-id="3" class=".card__link">
+                    <img src="../../assets/pink.png" alt="pink-shoe" />
+                  </a>
+                </div>
+                <div class="card__item">
+                  <a href="#" data-id="4" class=".card__link">
+                    <img src="../../assets/yellow.png" alt="yellow-shoe" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card__info info">
+              <p class="info__delivery">
+                <b>Fast Delivery:</b> 2-4 days from SA 
+                <img id="flag" src="../../assets/zaFlag.svg" alt="">
+              </p>
+              <p class="info__stock">
+                <b>In Stock:</b> Shipping from Johannesburg 
+                <img id="flag" src="../../assets/zaFlag.svg" alt="">
+              </p>
+              <div class="info__rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span>(10)</span>
+              </div>
+            </div>
+          </div>
+          <div class="card__options options">
+            <div class="options__box">
+              <p class="options__title">color</p>
+              <select class="options-color">
+                <option value="2">Black</option>
+                <option value="3">Orange</option>
+                <option value="4">Pink</option>
+                <option value="5">Yellow</option>
+              </select>
+            </div>
+            <div class="options__box">
+              <p class="options__title">size</p>
+              <select class="options-size">
+                <option class="options__option" value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+          </div>
+          <button class="card__buy"><a href="https://www.youtube.com/watch?v=-452p_9ESbM">Buy now</a></button>
+        </section>
+      </main>
+    </div>
+    <script src="../../features/timer.js"></script>
+    <script src="../../features/slider.js"></script>
+    <script src="../../features/flagFix.js"></script>
+  </body>
+</html>
